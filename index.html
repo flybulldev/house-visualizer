@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./_app/immutable/entry/start.Fs3pNeqR.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/gFMiL7D7.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BKQRZpLz.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/nGRB2s6B.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.C_SFXVaJ.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BYiaVQG9.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BXkAsgVk.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/9b47mK0u.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/6LvMoZwR.js" rel="modulepreload">
+		
+		<style>
+			#app-loader {
+				position: fixed;
+				inset: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: #0f0f1a;
+				z-index: 9999;
+				transition: opacity 0.3s ease;
+			}
+			#app-loader.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+			#app-loader-spinner {
+				width: 48px;
+				height: 48px;
+				border: 3px solid #2a2a4a;
+				border-top-color: #4fc3f7;
+				border-radius: 50%;
+				animation: spin 1s linear infinite;
+			}
+			#app-loader-text {
+				margin-top: 16px;
+				color: #4fc3f7;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				font-size: 14px;
+			}
+			@keyframes spin {
+				to { transform: rotate(360deg); }
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div id="app-loader">
+			<div id="app-loader-spinner"></div>
+			<div id="app-loader-text">加载中...</div>
+		</div>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_hs48z5 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Fs3pNeqR.js"),
+						import("./_app/immutable/entry/app.C_SFXVaJ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
